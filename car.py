@@ -9,14 +9,16 @@
 # The class name should always be in Capital!!
 class Car:
 
-    
+    wheels = 4  # clas variable (default value)
+
     def __init__(self, make, model, year, color):
 
-        self.make = make
-        self.model = model
-        self.year = year
-        self.color = color
+        self.make = make   # instance variables
+        self.model = model    # instance variables
+        self.year = year    # instance variables
+        self.color = color   # instance variables
 
+# The variables which are declared inside the constructor are called as Instance Variables.
 
     def drive(self):
         print("This "+self.model+" is driving")
