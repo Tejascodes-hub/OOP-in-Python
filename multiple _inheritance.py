@@ -1,0 +1,1 @@
+# multiple inheritance is a concept when a child class is derived from more than one parent class.
