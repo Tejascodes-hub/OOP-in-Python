@@ -3,15 +3,30 @@
 # this works alphabetically.
 
 # sort() method :
-students = ["Tejas", "Samarth", "Bhavya", "Soham", "Shreyas", "Nihar"]
-students.sort()
-for i in students:
-    print(i)
+#students = ["Tejas", "Samarth", "Bhavya", "Soham", "Shreyas", "Nihar"]
+#students.sort()
+#for i in students:
+    #print(i)
 
-print("--------------------------------------------------------------------")
+#print("--------------------------------------------------------------------")
 # sort() function :
 
-friends = ("ksj", "Sunny", "Roshan", "Priyanshu")
-sorted_friends = sorted(friends)
-for i in sorted_friends:
+#college_friends = ("samarth", "soham", "bhavya", "shreyash", "nihar")
+#sorted_clg_friends = sorted(college_friends, reverse=True)
+#for i in sorted_clg_friends:
+   # print(i)
+
+# dealing with lists of tuples:
+
+family = [("Ramesh", "Dad", 60),
+          ("Mangala", "Mom", 50),
+          ("Avantka", "Sister", 25)]
+
+# the index is been entered column wise.
+age = lambda age:age[2]
+#family.sort(key=age)
+
+# same by sorted functions:
+sorted_family = sorted(family, key=age)
+for i in sorted_family:
     print(i)
